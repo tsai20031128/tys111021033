@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔡苡瑄 的個人網頁</title>
+    <style>
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #2d3436;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: -30px auto 2rem;
+            padding: 0 20px;
+        }
+        section {
+            background: #fff;
+            margin-bottom: 2rem;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0984e3;
+            border-left: 5px solid #0984e3;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+        .profile-flex {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .info-card {
+            flex: 1;
+            min-width: 280px;
+        }
+        .info-item {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .info-item strong {
+            color: #636e72;
+            width: 80px;
+            display: inline-block;
+        }
+        .main-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .campus-img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        .anime-container {
+            text-align: center;
+        }
+        .anime-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .anime-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .anime-box img:hover {
+            transform: translateY(-5px);
+        }
+        .anime-label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #d63031;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #636e72;
+        }
+        @media (max-width: 600px) {
+            .anime-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+    <p>遇見苡瑄 的專屬空間</p>
+</header>
+
+<div class="container">
+    
+    <section>
+        <h2>自我介紹</h2>
+        <div class="profile-flex">
+            <div class="info-card">
+                <div class="info-item"><strong>姓名</strong> 蔡苡瑄</div>
+                <div class="info-item"><strong>英文名</strong> Tsai Yi Shiuan</div>
+                <div class="info-item"><strong>學校</strong> 亞洲大學</div>
+                <div class="info-item"><strong>學號</strong> 111021033</div>
+                <p style="color: #636e72; margin-top: 20px;">
+                    你好！我是就讀於亞洲大學的苡瑄。喜歡捕捉生活的瞬間，
+                    不論是校園的風景還是熱血的動漫，都是我生活中不可或缺的部分。
+                </p>
+            </div>
+            <img src="我.jpeg" alt="蔡苡瑄個人照" class="main-img">
+        </div>
+        <img src="我 亞大.jpeg" alt="亞洲大學校園" class="campus-img">
+    </section>
+
+    <section class="anime-container">
+        <h2>動漫收藏：我的英雄學院</h2>
+        <p>我最喜歡的動漫是《我的英雄學院》，深深被綠谷與爆豪的成長故事所吸引！</p>
+        
+        <div class="anime-grid">
+            <div class="anime-box">
+                <img src="勝出 拿卡.jpeg" alt="綠谷與爆豪 拿卡片">
+                <div class="anime-label">童年的夢想開端</div>
+            </div>
+            <div class="anime-box">
+                <img src="勝出 對視.jpeg" alt="綠谷與爆豪 對視">
+                <div class="anime-label">最強的宿敵與夥伴</div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2024 Tsai Yi Shiuan | 亞洲大學 111021033
+</footer>
+
+</body>
+</html>
